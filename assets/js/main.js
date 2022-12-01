@@ -9,6 +9,7 @@ const navMenu = document.querySelector(".menu__nav");
 const mainImg = document.querySelector(".main__work__section");
 const leftImg = document.querySelector(".left__work__section");
 const rightImg = document.querySelector(".right__work__section");
+const buttonSend = document.querySelector(".button2");
 let width;
 
 function getPageWidth() {
@@ -146,4 +147,5 @@ document.querySelector(".work__section").addEventListener("click", (event) => {
 */
 
 navToggle.addEventListener("click", () => navMenu.classList.toggle("menu__nav__visible"));
-navClose.addEventListener("click", () => navMenu.classList.remove("menu__nav__visible"))
+navClose.addEventListener("click", () => navMenu.classList.remove("menu__nav__visible"));
+buttonSend.addEventListener("click", () => swal('Gracias por contactarme', 'Su mensaje fue enviado correctamente', 'success'));
