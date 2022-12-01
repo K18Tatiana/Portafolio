@@ -100,7 +100,7 @@ body {
 .menu__nav__close {
     list-style: none;
     height: 70px;
-    margin-left: -60%;
+    margin-left: -50%;
 }
 .nav__close {
     cursor: pointer;
