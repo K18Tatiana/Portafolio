@@ -17,11 +17,9 @@
     box-sizing: border-box;
 }
 body {
-    width: 100%;
     background: #0F103F;
     color: var(--white);
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 /** Buttons **/
 .button1 {
@@ -434,42 +432,63 @@ body {
 }
 /** Background images **/
 .illustration1 {
+    width: 372px;
+    height: 479px;
     position: absolute;
     left: -263px;
     top: -83px;
+    background-image: url(../img/Illustration1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .illustration2 {
+    position: absolute;
     display: none;
+    background-image: url(../img/Illustration2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .illustration__woman {
     position: absolute;
-    width: 950px;
     height: 970px;
     left: -278px;
     top: 630px;
     z-index: -2;
+    background-image: url(../img/IllustrationWoman.png);
+    background-size: 950px 970px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .illustration4 {
     position: absolute;
     left: 245px;
     top: 1242px;
     z-index: -1;
+    background-image: url(../img/Illustration4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .illustration5 {
     position: absolute;
-    width: 550px;
     height: 500px;
     left: -100px;
     top: 1720px;
     z-index: -1;
+    background-image: url(../img/Illustration5.png);
+    background-size: 550px 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .illustration6 {
     position: absolute;
-    width: 1440px;
     height: 1075px;
     left: -330px;
     top: 2700px;
     z-index: 0;
+    background-image: url(../img/Illustration6-1.png);
+    background-size: 1440px 1075px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /** Version mobile **/
 @media (min-width: 363px) {
@@ -498,14 +517,10 @@ body {
 @media (min-width: 435px) {
     /** Background images **/
     .illustration5 {
-        left: -80px; /* 70 */
+        left: -80px;
     }
 }
 @media (min-width: 470px) {
-    /** Background images **/
-    .illustration5 {
-        left: -50px;
-    }
     /** Work section **/
     .arrow__right {
         padding-left: 15px;
@@ -517,6 +532,10 @@ body {
     .nav__toggle img {
         width: 40px;
         height: 40px;
+    }
+    /** Background images **/
+    .illustration5 {
+        left: -50px;
     }
 }
 @media (min-width: 500px) {
@@ -535,13 +554,6 @@ body {
     }
 }
 @media (min-width: 530px) {
-    /** Background images **/
-    .illustration5 {
-        width: 650px;
-        height: 600px;
-        left: -80px;
-        top: 1680px;
-    }
     /** Work section **/
     .works__section {
         width: 325px;
@@ -549,6 +561,13 @@ body {
     /* Work section - Arrows */
     .arrow__right i, .arrow__left i {
         font-size: 35px;
+    }
+    /** Background images **/
+    .illustration5 {
+        height: 600px;
+        background-size: 650px 600px;
+        left: -80px;
+        top: 1680px;
     }
 }
 @media (min-width: 560px) {
@@ -564,19 +583,19 @@ body {
     }
 }
 @media (min-width: 600px) {
-    /** Background images **/
-    .illustration5 {
-        width: 770px;
-        height: 720px;
-        left: -100px;
-        top: 1600px;
-    }
     /** Work section **/
     .arrow__right {
         padding-left: 25px;
     }
     .arrow__left { 
         padding-right: 25px;
+    }
+    /** Background images **/
+    .illustration5 {
+        height: 720px;
+        background-size: 770px 720px;
+        left: -100px;
+        top: 1600px;
     }
 }
 @media (min-width: 656px) {
@@ -590,8 +609,6 @@ body {
     }
     /** Background images **/
     .illustration5 {
-        width: 770px;
-        height: 720px;
         left: -75px;
         top: 1580px;
     }
@@ -606,19 +623,19 @@ body {
     }
 }
 @media (min-width: 702px) {
+    /** About me section **/
+    .about__me__section {
+        margin-left: 278px;
+    }
     /** Background images **/
     .illustration5 {
-        width: 870px;
         height: 820px;
+        background-size: 870px 820px;
         left: -95px;
         top: 1525px;
     }
     .illustration__woman {
         left: -160px;
-    }
-    /** About me section **/
-    .about__me__section {
-        margin-left: 278px;
     }
 }
 /** Version desktop **/
@@ -825,15 +842,14 @@ body {
     }
     .illustration2 {
         display: initial;
-        position: absolute;
-        width: 1116px;
+        background-size: 1116px 808px;
         height: 808px;
         left: 340px;
         top: 211px;
         z-index: -1;
     }
     .illustration__woman {
-        width: 1203px;
+        background-size: 1203px 1203px;
         height: 1203px;
         left: -250px;
         top: 900px;
@@ -842,14 +858,14 @@ body {
         display: none;       
     }
     .illustration5 {
-        width: 1000px;
         height: 950px;
+        background-size: 1000px 950px;
         left: -136px;
         top: 1919px;
     }
     .illustration6 {
-        width: 1440px;
         height: 1075px;
+        background-size: 1440px 1075px;
         left: 40px;
         top: 3129px;    
     }
@@ -874,7 +890,7 @@ body {
         left: -200px; /* 209px */
     }
     .illustration5 {
-        width: 1150px;
+        background-size: 1150px 1100px;
         height: 1100px;
         left: -175px;
         top: 1850px;
@@ -1064,15 +1080,11 @@ body {
         margin-right: 90px;
     }
     /** Background images **/
-    .illustration6 {
-        left: 280px;  
-    }
-    /** Background images **/
     .illustration__woman {
         left: -110px;
     }
     .illustration5 {
-        width: 1350px;
+        background-size: 1350px 1300px;
         height: 1300px;
         left: -160px;
         top: 1870px;
@@ -1191,7 +1203,7 @@ body {
         left: 0;
     }
     .illustration5 {
-        width: 1400px;
+        background-size: 1400px 1350px;
         height: 1350px;
         left: -100px;
         top: 1870px;
@@ -1211,7 +1223,7 @@ body {
     }
     /** Background images **/
     .illustration5 {
-        width: 1450px;
+        background-size: 1450px 1500px;
         height: 1500px;
         top: 1800px;
     }
@@ -1231,7 +1243,7 @@ body {
         left: 50px;
     }
     .illustration5 {
-        width: 1500px;
+        background-size: 1500px 1550px;
         height: 1550px;
         top: 1830px;
     }
@@ -1243,7 +1255,7 @@ body {
 @media (min-width: 1410px) {
     /** Background images **/
     .illustration5 {
-        width: 1600px;
+        background-size: 1600px 1650px;
         height: 1650px;
         top: 1780px;
         left: -130px;

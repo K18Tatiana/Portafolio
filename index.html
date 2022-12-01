@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Portafolio</title>
 </head>
-<body onload="getPageWidth();" onresize="getPageWidth();">
+<body onload="getPageSize();" onresize="getPageSize();">
     <nav class="nav__bar">
         <ul class="menu__nav">
             <li class="menu__nav__close">
@@ -35,14 +35,12 @@
     </nav>
     <main>
         <!-- Background images -->
-        <div>
-            <img src="./assets/img/Illustration1.png" alt="" class="illustration1">
-            <img src="./assets/img/Illustration2.png" alt="" class="illustration2">
-            <img src="./assets/img/IllustrationWoman.png" alt="" class="illustration__woman">
-            <img src="./assets/img/Illustration4.png" alt="" class="illustration4">
-            <img src="./assets/img/Illustration5.png" alt="" class="illustration5">
-            <img src="./assets/img/Illustration6-1.png" alt="" class="illustration6">
-        </div>
+        <div class="illustration1"></div>
+        <div class="illustration2"></div>
+        <div class="illustration__woman"></div>
+        <div class="illustration4"></div>
+        <div class="illustration5"></div>
+        <div class="illustration6"></div>
         <!-- Home section -->
         <section class="home__section" id="home">
             <article class="home__section__text">

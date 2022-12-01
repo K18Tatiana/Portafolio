@@ -10,11 +10,15 @@ const mainImg = document.querySelector(".main__work__section");
 const leftImg = document.querySelector(".left__work__section");
 const rightImg = document.querySelector(".right__work__section");
 const buttonSend = document.getElementById("btn__send");
+const imgIllusWoman = document.querySelector(".illustration__woman");
+const imgIllus2 = document.querySelector(".illustration2");
+const imgIllus5 = document.querySelector(".illustration5");
+const imgIllus6 = document.querySelector(".illustration6");
 let width;
 
-function getPageWidth() {
+function getPageSize() {
     const pageWidth = document.documentElement.clientWidth;
-    console.log(pageWidth);
+    const pageHeight = document.documentElement.clientHeight;
     if(pageWidth <= 767) {
         imgUiDesigns.style.visibility = "initial";
         imgDesigns.style.visibility = "hidden";
@@ -25,6 +29,15 @@ function getPageWidth() {
         imgMockups.style.visibility = "initial";
     }
     width = pageWidth;
+    const leftImgIllusWoman = imgIllusWoman.offsetLeft;
+    const leftImgIllus2 = imgIllus2.offsetLeft;
+    const leftImgIllus5 = imgIllus5.offsetLeft;
+    const leftImgIllus6 = imgIllus6.offsetLeft;
+    
+    imgIllusWoman.style.width = `${pageWidth - leftImgIllusWoman}px`;
+    imgIllus2.style.width = `${pageWidth - leftImgIllus2}px`;
+    imgIllus5.style.width = `${pageWidth - leftImgIllus5}px`;
+    imgIllus6.style.width = `${pageWidth - leftImgIllus6}px`;
 }
 
 arrowRight.addEventListener('click', function(){
@@ -128,23 +141,6 @@ arrowLeft.addEventListener('click', function(){
         }
     }
 });
-
-/*
-document.querySelector(".work__section").addEventListener("click", (event) => {
-    if(event.target.classList.contains("img__left") || event.target.classList.contains("second__work__section__subtext") || event.target.classList.contains("h3__designs")){
-        leftImg.classList.remove("left__work__section", "second__work__section__subtext");
-        document.querySelector(".designs").style.height = "142px";
-        document.querySelector(".img__left").style.height = "142px";
-        mainImg.classList.remove("main__work__section", "main__work__section__subtext");
-        mainImg.classList.add("right__work__section", "second__work__section__subtext");
-        document.querySelector(".ui__designs").style.height = "125px";
-        rightImg.classList.remove("right__work__section", "second__work__section__subtext");
-        rightImg.classList.add("left__work__section");
-    } else if(event.target.classList.contains("img__left")){
-
-    }
-});
-*/
 
 navToggle.addEventListener("click", () => navMenu.classList.toggle("menu__nav__visible"));
 navClose.addEventListener("click", () => navMenu.classList.remove("menu__nav__visible"));
