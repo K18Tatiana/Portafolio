@@ -9,7 +9,7 @@ const navMenu = document.querySelector(".menu__nav");
 const mainImg = document.querySelector(".main__work__section");
 const leftImg = document.querySelector(".left__work__section");
 const rightImg = document.querySelector(".right__work__section");
-const buttonSend = document.querySelector(".button2");
+const buttonSend = document.querySelector(".btn");
 let width;
 
 function getPageWidth() {
